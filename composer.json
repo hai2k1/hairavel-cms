@@ -1,0 +1,53 @@
+{
+  "name": "haibase/hairavel-cms",
+  "description": "Hairavel CMS Application",
+  "type": "duxravel-app",
+  "license": "MIT",
+  "authors": [
+    {
+        "name": "HaiPHP",
+        "email": "trihai306201@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "haibase/hairavel-app": "*"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\": "src",
+      "Modules\\Cms\\Seeders\\": "database/seeders"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+    },
+    "laravel": {
+      "providers": [
+        "Modules\\Cms\\Providers\\CmsServiceProvider"
+      ]
+    },
+    "duxravel": {
+      "route": [
+        "src/Cms/Route/AuthAdmin.php",
+        "src/Cms/Route/Web.php",
+        "src/Cms/Route/Api.php"
+      ],
+      "menu": [
+        "src/Cms/Menu/Admin.php"
+      ],
+      "listener": [
+        "Modules\\Cms\\Listeners\\InstallSeed",
+        "Modules\\Cms\\Listeners\\ManageForm"
+      ]
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "preferred-install": "dist"
+  }
+}
