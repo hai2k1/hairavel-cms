@@ -43,6 +43,6 @@ class CmsServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/../../../theme' => public_path('themes'),
-        ], 'duxphp/duxravel-cms');
+        ], 'duxphp/hairavel-cms');
     }
 }

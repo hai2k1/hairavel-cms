@@ -25,7 +25,7 @@ class CmsMenuItemsTableSeeder extends Seeder
                     'parent_id' => NULL,
                     'menu_id' => 2,
                     'name' => 'About us',
-                    'url' => 'www.duxravel.com',
+                    'url' => 'www.hairavel.com',
                     '_lft' => 1,
                     '_rgt' => 2,
                     'created_at' => date('Y-m-d H:i:s'),

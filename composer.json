@@ -1,7 +1,7 @@
 {
   "name": "haibase/hairavel-cms",
   "description": "Hairavel CMS Application",
-  "type": "duxravel-app",
+  "type": "hairavel-app",
   "license": "MIT",
   "authors": [
     {
@@ -30,7 +30,7 @@
         "Modules\\Cms\\Providers\\CmsServiceProvider"
       ]
     },
-    "duxravel": {
+    "hairavel": {
       "route": [
         "src/Cms/Route/AuthAdmin.php",
         "src/Cms/Route/Web.php",
